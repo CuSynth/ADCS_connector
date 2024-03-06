@@ -17,10 +17,6 @@ class Ui_Form(object):
         self.gridLayout.setObjectName("gridLayout")
         spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
         self.gridLayout.addItem(spacerItem, 2, 0, 1, 1)
-        self.plainTextEdit = QtWidgets.QPlainTextEdit(parent=Form)
-        self.plainTextEdit.setReadOnly(True)
-        self.plainTextEdit.setObjectName("plainTextEdit")
-        self.gridLayout.addWidget(self.plainTextEdit, 0, 1, 3, 1)
         self.groupBox = QtWidgets.QGroupBox(parent=Form)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Minimum)
         sizePolicy.setHorizontalStretch(0)
@@ -92,6 +88,9 @@ class Ui_Form(object):
         self.V_z.setObjectName("V_z")
         self.gridLayout_2.addWidget(self.V_z, 3, 2, 1, 1)
         self.gridLayout.addWidget(self.groupBox_2, 0, 0, 1, 1)
+        self.logTE = QtWidgets.QTextBrowser(parent=Form)
+        self.logTE.setObjectName("logTE")
+        self.gridLayout.addWidget(self.logTE, 0, 1, 3, 1)
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -101,7 +100,7 @@ class Ui_Form(object):
         Form.setTabOrder(self.R_z, self.V_x)
         Form.setTabOrder(self.V_x, self.V_y)
         Form.setTabOrder(self.V_y, self.V_z)
-        Form.setTabOrder(self.V_z, self.plainTextEdit)
+        Form.setTabOrder(self.V_z, self.logTE)
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate

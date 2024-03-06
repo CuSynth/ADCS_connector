@@ -27,13 +27,6 @@
      </property>
     </spacer>
    </item>
-   <item row="0" column="1" rowspan="3">
-    <widget class="QPlainTextEdit" name="plainTextEdit">
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
    <item row="1" column="0">
     <widget class="QGroupBox" name="groupBox">
      <property name="sizePolicy">
@@ -190,6 +183,9 @@
      </layout>
     </widget>
    </item>
+   <item row="0" column="1" rowspan="3">
+    <widget class="QTextBrowser" name="logTE"/>
+   </item>
   </layout>
  </widget>
  <tabstops>
@@ -200,7 +196,7 @@
   <tabstop>V_x</tabstop>
   <tabstop>V_y</tabstop>
   <tabstop>V_z</tabstop>
-  <tabstop>plainTextEdit</tabstop>
+  <tabstop>logTE</tabstop>
  </tabstops>
  <resources/>
  <connections/>
